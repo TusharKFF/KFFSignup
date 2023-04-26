@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Embark</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://localhost/singin.css/hco_fonts.css" rel="stylesheet" type="text/css" />
+  <link href="https://localhost/signup.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<div id="companyLogo">
+        <img
+          data-tenant-branding-logo="true"
+          src="https://deveducateinc.azurewebsites.net/templates/assets/logo/embark_violet.svg"
+          alt="Embark"
+        >
+	</div>
+	<div id="largeBackButton">
+		<button id="backButtonMedia" class="iconButtonFilled" onclick="goBack()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+	</div>
+  <div class="container">
+    <div class="content">
+      <button id="backButton" class="iconButtonFilled" onclick="goBack()">
+        <span class="material-icons">arrow_back</span>
+      </button>
+      <h1 id="headline">
+        Welcome to Embark
+      </h1>
+      <p id="description">
+        Sign up to open your RESP account. Explore products, resources, and guidance on the way.
+      </p>
+      <div id="serverError" class="errorAlert">
+        <span class="material-icons">error</span>
+        <div id="serverErrorMessage"></div>
+      </div>
+      <div id="api" data-name="SelfAsserted" role="main"></div>
+    </div>
+    <div class="signIn">
+      Have an account? <a id="signInLink">Sign in</a>
+    </div>
+  </div>
+
+  <script src="https://localhost/Signup.js"></script>
+</body>
+</html>
